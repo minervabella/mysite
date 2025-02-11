@@ -1,8 +1,11 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import { setupAuth } from "./auth";
 
 export function registerRoutes(app: Express): Server {
+  setupAuth(app);
+
   app.get("/api/products", async (_req, res) => {
     const products = await storage.getAllProducts();
     res.json(products);
