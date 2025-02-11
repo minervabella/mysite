@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { CartProvider } from "./lib/cart";
 import { AuthProvider } from "./lib/auth";
 import { SiteHeader } from "./components/site-header";
+import { SiteFooter } from "./components/site-footer";
+import { WhatsAppChat } from "./components/whatsapp-chat";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Products from "@/pages/products";
@@ -30,8 +32,14 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <CartProvider>
-          <SiteHeader />
-          <Router />
+          <div className="min-h-screen flex flex-col">
+            <SiteHeader />
+            <main className="flex-grow">
+              <Router />
+            </main>
+            <SiteFooter />
+          </div>
+          <WhatsAppChat />
           <Toaster />
         </CartProvider>
       </AuthProvider>
