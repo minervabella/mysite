@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Leather Tote",
+      "description": "Elegant everyday tote bag made from premium leather",
+      "price": "129.99",
+      "image": "https://images.unsplash.com/photo-1591561954557-26941169b49e",
+      "category": "Totes"
+    },
+    {
+      "id": 2,
+      "name": "Structured Satchel",
+      "description": "Professional satchel with multiple compartments",
+      "price": "159.99",
+      "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7",
+      "category": "Satchels"
+    },
+    {
+      "id": 3,
+      "name": "Mini Crossbody Bag",
+      "description": "Compact crossbody perfect for essentials",
+      "price": "89.99",
+      "image": "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6",
+      "category": "Crossbody"
+    }
+  ],
+  "users": [],
+  "nextProductId": 4,
+  "nextUserId": 1
+}
